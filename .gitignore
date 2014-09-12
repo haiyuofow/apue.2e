@@ -1,0 +1,7 @@
+#忽略gitignore文件
+#.gitignore
+#忽略后缀名为.o 和.a的文件
+*.[oa]
+#忽略.out
+*.out
+

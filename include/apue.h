@@ -3,6 +3,8 @@
 #ifndef	_APUE_H
 #define	_APUE_H
 
+#define ARG_MAX 4096 /**自定义的**/
+
 #if defined(SOLARIS)
 #define _XOPEN_SOURCE	500	/* Single UNIX Specification, Version 2  for Solaris 9 */
 #define CMSG_LEN(x)	_CMSG_DATA_ALIGN(sizeof(struct cmsghdr)+(x))

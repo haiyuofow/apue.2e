@@ -8,6 +8,7 @@ main(void)
 	if ((pid = fork()) < 0)
 		err_sys("fork error");
 	else if (pid != 0) {		/* parent */
+puts("我是父亲进程");
 		sleep(2);
 		exit(2);				/* terminate with exit status 2 */
 	}
@@ -24,7 +25,7 @@ main(void)
 	if ((pid = fork()) < 0)
 		err_sys("fork error");
 	else if (pid != 0) {
-		execl("/bin/dd", "dd", "if=/etc/termcap", "of=/dev/null", NULL);
+//		execl("/bin/dd", "dd", "if=/etc/termcap", "of=/dev/null", NULL);
 		exit(7);				/* shouldn't get here */
 	}
 

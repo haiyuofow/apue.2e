@@ -28,7 +28,7 @@ thr_fn1(void *arg)
 void *
 thr_fn2(void *arg)
 {
-	printf("thread 2: ID is %d\n", pthread_self());
+	printf("thread 2: ID is %d\n",(int)pthread_self());
 	pthread_exit((void *)0);
 }
 
