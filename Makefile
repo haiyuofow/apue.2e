@@ -23,6 +23,9 @@ linux:
 macos:
 	for i in $(DIRS); do \
 		(cd $$i && $(MAKE) -f macos.mk) || exit 1; \
+		echo "helloworld";\
+		echo $$i;\
+		echo $(MAKE);\
 	done
 
 solaris:

@@ -1,4 +1,5 @@
 #!/bin/sh
+#这个文件是用来检测系统的类型的
 case `uname -s` in
 "FreeBSD")
 	PLATFORM="freebsd"
