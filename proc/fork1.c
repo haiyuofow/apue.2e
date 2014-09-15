@@ -12,6 +12,7 @@ main(void)
 	var = 88;
 	if (write(STDOUT_FILENO, buf, sizeof(buf)-1) != sizeof(buf)-1)
 		err_sys("write error");
+	fflush(STDOUT_FILENO);
 	printf("before fork\n");	/* we don't flush stdout */
 
 	if ((pid = fork()) < 0) {
